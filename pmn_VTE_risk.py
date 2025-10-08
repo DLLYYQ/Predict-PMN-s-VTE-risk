@@ -9,7 +9,7 @@ from matplotlib import pyplot as plt
 matplotlib.rc("font", family='YouYuan')
 
 # 加载模型
-model = joblib.load('F:\\桌面文件\\3333\\streamlit\\1_knn_BSMO_frequent_train_data_NGBoost.joblib')
+model = joblib.load('1_knn_BSMO_frequent_train_data_NGBoost.joblib')
 # 加载 SHAP 解释器
 explainer = shap.TreeExplainer(model)  # 适用于树模型
 columns = ['Recurrent nephrotic syndrome (YES/NO)', 'umALB/Ucr (mg/g)', 'Statins (YES/NO)', 'D-Dimer (mg/L)', 'FDP > 5mg/L (YES/NO)', 'International Normalized Ratio (INR)', 'AT III activity(%)', 'Albumin (g/L)', 'PLA2R Antibody（RU/ml）', 'Cholinesterase (KU/L)']
